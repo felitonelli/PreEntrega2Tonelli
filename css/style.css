@@ -11,39 +11,6 @@ body{
 
 /*index*/
 
-/*header*/ 
-header{
-    background-color: black;
-    height: 80;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-nav h3{
-    color: rgb(25, 205, 241);
-    text-decoration: underline;
-    margin-left: 50px;
-}
-
-.navbar{
-    display: flex;
-    list-style: none;
-    gap: 1.25rem;
-}
-.navbar li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.navbar li a:hover{
-    color: rgb(25, 205, 241);
-}
-
 /*Menu desplegable*/
 .conteiner-button{
     background-color:black;
@@ -60,7 +27,7 @@ nav h3{
     border-radius: 10px;
     width: 160px;
     padding: 5px 5px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .button a{
     color: white;
@@ -84,8 +51,6 @@ nav h3{
     width: 100%;
     height: 500px;
 }
-
-
 
 /*ULtimos ingresos*/
 .Ultimos-ingresos h2{
@@ -161,22 +126,24 @@ nav h3{
     padding: 10px ;  
 }
 
-
-/*Lorem*/
-.Lorem h3{
-    margin-left: 3.125rem;
+/*Atencion al cliente*/
+.Ayuda{
+    background-color:#16ab72;
+    margin-top: 25px;
+}
+.Ayuda h2{
+    color: white;
     text-decoration: underline;
-    font-size: 1.5625rem;
+    text-align: center;
+    padding: 10px 10px;
 }
-
-.Lorem p{
-    background-color: rgba(203, 202, 201, 0.885);
-    margin-left: 3.125rem;
-    margin-right: 3.125rem;
-    margin-top: .625rem;
-    font-size: 1.5625rem;
+.Ayuda_inf{
+    font-size: 20px;
 }
-
+.Ayuda_inf h3{
+    font-size: 25px;
+    text-decoration: underline;
+}
 /*Contacto*/
 /*Main*/
 /*Informacion*/
@@ -445,15 +412,461 @@ form #Enviar{
 /* Media Responsive */
 @media(max-width:1024px)
 {
-
-}
-@media (max-width: 768px) 
-{
-    .header{
-        background-color: black;
-        display: flex;
+    .conteiner-button{
+        height: 350px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    } 
+    .button button{
+        width: 160px;
+    }
+    .catalogo{
+        height: 1500px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(8 , 1fr);
+        grid-template-areas: 
+        "area1 area1"
+        "area2 area2"
+        "area3 area3"
+        "area4 area4"
+        "area5 area5"
+        "area6 area6"
+        "area7 area8"
+        "area7 area8"
+        
+        ;
+    }
+    .area1 img{
+        width: 250px;
+        height: 187px;
+    }
+    .text_conteiner_1{
+        margin-left: 35px;
+    }
+    .text_conteiner_1 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_1 button{
+        width: 180px;
+        font-size: 20px;
+    }
+    .area2 img{
+        width: 250px;
+        height: 187px;
+    }
+    .text_conteiner_2{
+        margin-left:35px;
+    }
+    .text_conteiner_2 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_2 button{
+        width: 180px;
+        font-size: 20px;
+    }
+    .area3 img{
+        width: 250px;
+        height: 187px;
+    }
+    .text_conteiner_3{
+        margin-left: 35px;
+    }
+    .text_conteiner_3 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_3 button{
+        width: 180px;
+        font-size: 20px;
+    }
+    .area4 img{
+        width: 250px;
+        height: 187px;
+    }
+    .text_conteiner_4{
+        margin-left: 35px;
+    }
+    .text_conteiner_4 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_4 button{
+        width: 180px;
+        font-size: 20px;
+    }
+    .area5 img{
+        width: 250px;
+        height: 187px;
+    }
+    .text_conteiner_5{
+        margin-left: 35px;
+    }
+    .text_conteiner_5 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_5 button{
+        width: 180px;
+        font-size: 20px;
+    }
+    .area6 img{
+        width: 250px;
+        height: 187px;
+    }
+    .text_conteiner_6{
+        margin-left: 35px;
+    }
+    .text_conteiner_6 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_6 button{
+        width: 180px;
+        font-size: 20px;
+    }
+
+
+    
+}
+@media (max-width: 768px) {
+    .conteiner-button{
+        display: flex;
+        flex-direction: column;
+        height: 310px;
+    } 
+    .button button{
+        width: 130px;
+    }
+    .button a{
+        font-size: 15px;
+        padding:1px 1px;
+    }
+    .conteiner-img{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .conteiner-img img{
+        width: 100%;
+        height: 300px;
+    }
+    .Ultimos-ingresos h2{
+        margin-left: 45px;
+        font-size: 20px;
+    }
+   
+    .Suscripcion h2{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    /*catalogo*/
+    .area1 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_1{
+        margin-left: 35px;
+    }
+    .text_conteiner_1 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_1 button{
+        width: 180px;
+        font-size: 15px;
+    }
+    .area2 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_2{
+        margin-left:35px;
+    }
+    .text_conteiner_2 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_2 button{
+        width: 180px;
+        font-size: 15px;
+    }
+    .area3 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_3{
+        margin-left: 35px;
+    }
+    .text_conteiner_3 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_3 button{
+        width: 180px;
+        font-size: 15px;
+    }
+    .area4 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_4{
+        margin-left: 35px;
+    }
+    .text_conteiner_4 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_4 button{
+        width: 180px;
+        font-size: 15px;
+    }
+    .area5 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_5{
+        margin-left: 35px;
+    }
+    .text_conteiner_5 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_5 button{
+        width: 180px;
+        font-size: 15px;
+    }
+    .area6 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_6{
+        margin-left: 35px;
+    }
+    .text_conteiner_6 h3{
+        font-size: 20px;
+    }
+    .text_conteiner_6 button{
+        width: 180px;
+        font-size: 15px;
+    }
+    /*footer*/
+    .section-1 h3{
+        margin-left: 15px;
+        font-size: 10px;
+    }
+    .section-2 img{
+        max-width: 100%; 
+    }
+}
+@media (max-width: 425px) {
+    .Ultimos-ingresos h2{
+        margin-left: 45px;
+        font-size: 20px;
+    }
+    .card{
+        width: 200px;
+        height: 300px;
+        box-shadow: 2px 2px 2px rgb(179, 175, 175);
+
+    }
+    .Suscripcion h2{
+        font-size: 20px;
+        text-decoration: underline;
+        margin-right: 5px;
+    }
+    /*catlogo*/
+    .area1 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_1{
+        margin-left: 30px;
+    }
+    .text_conteiner_1 h3{
+        font-size: 15px;
+    }
+    .text_conteiner_1 button{
+        width: 130px;
+        font-size: 15px;
+    }
+    .area2 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_2{
+        margin-left:30px;
+    }
+    .text_conteiner_2 h3{
+        font-size: 15px;
+    }
+    .text_conteiner_2 button{
+        width: 130px;
+        font-size: 15px;
+    }
+
+    .area3 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_3{
+        margin-left: 30px;
+    }
+    .text_conteiner_3 h3{
+        font-size: 15px;
+    }
+    .text_conteiner_3 button{
+        width: 130px;
+        font-size: 15px;
+    }
+    .area4 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_4{
+        margin-left: 30px;
+    }
+    .text_conteiner_4 h3{
+        font-size: 15px;
+    }
+    .text_conteiner_4 button{
+        width: 130px;
+        font-size: 15px;
+    }
+    .area5 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_5{
+        margin-left: 30px;
+    }
+    .text_conteiner_5 h3{
+        font-size: 15px;
+    }
+    .text_conteiner_5 button{
+        width: 130px;
+        font-size: 15px;
+    }
+    .area6 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_6{
+        margin-left: 30px;
+    }
+    .text_conteiner_6 h3{
+        font-size: 15px;
+    }
+    .text_conteiner_6 button{
+        width: 130px;
+        font-size: 15px;
+    }
+
+    /*footer*/
+    .section-1 h3{
+        margin-left: 15px;
+        font-size: 10px;
+    }
+
+    .section-2 img{
+        max-width: 110%; 
+    }
+
+}
+@media (max-width: 325px) {
+    .Suscripcion h2{
+        font-size: 15px;
+        text-decoration: underline;
+        margin-right: 5px;
+    }
+    /*catalogo*/
+    .area1 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_1{
+        margin-left: 20px;
+    }
+    .text_conteiner_1 h3{
+        font-size: 10px;
+    }
+    .text_conteiner_1 button{
+        width: 120px;
+        font-size: 10px;
+    }
+    .area2 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_2{
+        margin-left: 20px;
+    }
+    .text_conteiner_2 h3{
+        font-size: 10px;
+    }
+    .text_conteiner_2 button{
+        width: 120px;
+        font-size: 10px;
+    }
+    
+    .area3 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_3{
+        margin-left: 20px;
+    }
+    .text_conteiner_3 h3{
+        font-size: 10px;
+    }
+    .text_conteiner_3 button{
+        width: 120px;
+        font-size: 10px;
+    }
+    .area4 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_4{
+        margin-left: 20px;
+    }
+    .text_conteiner_4 h3{
+        font-size: 10px;
+    }
+    .text_conteiner_4 button{
+        width: 120px;
+        font-size: 10px;
+    }
+    .area5 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_5{
+        margin-left: 20px;
+    }
+    .text_conteiner_5 h3{
+        font-size: 10px;
+    }
+    .text_conteiner_5 button{
+        width: 120px;
+        font-size: 10px;
+    }
+    .area6 img {
+        width: 150px;
+        height: 187px;
+    }
+    .text_conteiner_6{
+        margin-left: 20px;
+    }
+    .text_conteiner_6 h3{
+        font-size: 10px;
+    }
+    .text_conteiner_6 button{
+        width: 120px;
+        font-size: 10px;
+    }
+    /*footer*/
+    .section-1 h3{
+        margin-left: 15px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 320px) {
+    .section-1 h3{
+        margin-left: 5px;
+        font-size: 10px;
     }
 }
