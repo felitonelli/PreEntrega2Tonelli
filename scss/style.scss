@@ -1,0 +1,17 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/maps.scss";
+
+/*Elementos carpeta base*/
+@import "./base/resets";
+
+/*Elementos carpeta layout*/
+@import "./layout/index-html";
+@import "./layout/atencion-al-cliente.html";
+@import "./layout/catalogo-html";
+@import "./layout/contacto-html";
+@import "./layout/ingresar-html";
+
+/*Elemtos de componentes*/
+
+/*Elementos del mediaquerry*/

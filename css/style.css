@@ -1,0 +1,404 @@
+/*Elementos carpeta base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #74a7e8;
+}
+
+/*Elementos carpeta layout*/
+/*Index*/
+.conteiner-menu-desplegable {
+  background-color: black;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-around;
+  align-items: none;
+  gap: none;
+  width: 100%;
+  height: 80px;
+  margin-top: 3.125rem;
+  list-style: none;
+}
+.conteiner-menu-desplegable div nav button {
+  background-color: rgb(25, 205, 241);
+  border-radius: 10px;
+  width: 160px;
+  padding: 5px 5px;
+  margin-top: 20px;
+}
+.conteiner-menu-desplegable div nav button a {
+  color: white;
+  font-size: 20px;
+}
+.conteiner-menu-desplegable div nav button a:hover {
+  color: #000000;
+}
+
+.conteiner-img-central {
+  width: 100%;
+  height: 500px;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.conteiner-img-central div img {
+  width: 100%;
+  height: 500px;
+}
+
+.Ultimos-ingresos h2 {
+  text-decoration: underline;
+  margin-left: 3.125rem;
+  margin-bottom: 0.9375rem;
+  font-size: 30px;
+}
+
+.conteiner-card {
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: none;
+  gap: none;
+  margin-top: 0.3125rem;
+  margin-bottom: 2.1875rem;
+}
+.conteiner-card article {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgb(179, 175, 175);
+  overflow: hidden;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+.conteiner-card article img {
+  width: 100%;
+}
+
+.Suscripcion {
+  width: 100%;
+  background-color: #4E217F;
+}
+.Suscripcion div h2 {
+  font-size: 1.5625rem;
+  color: white;
+  margin-right: 1.5625rem;
+  text-align: end;
+  padding: 0.3125rem 0.625rem;
+}
+
+.footer {
+  display: grid;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin-top: 3.125rem;
+}
+.footer section {
+  color: white;
+}
+.footer section h3 {
+  padding: 20px 20px;
+  margin-left: 40px;
+  font-size: 15px;
+}
+.footer section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.footer section div a img {
+  max-width: 70%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+/*Atencion al cliente*/
+.conteiner-menu-desplegable {
+  background-color: black;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-around;
+  align-items: none;
+  gap: none;
+  width: 100%;
+  height: 80px;
+  margin-top: 3.125rem;
+  list-style: none;
+}
+.conteiner-menu-desplegable div li button {
+  background-color: rgb(25, 205, 241);
+  border-radius: 10px;
+  width: 160px;
+  padding: 5px 5px;
+  margin-top: 20px;
+}
+.conteiner-menu-desplegable div li button a {
+  color: white;
+  font-size: 20px;
+}
+.conteiner-menu-desplegable div li button a:hover {
+  color: black;
+}
+
+.conteiner-ayuda {
+  background-color: #16ab72;
+  margin-top: 25px;
+}
+.conteiner-ayuda h2 {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px 10px;
+}
+.conteiner-ayuda div {
+  font-size: 20px;
+}
+.conteiner-ayuda div h3 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+/*Catalogo*/
+.catalogo {
+  display: grid;
+  margin-top: 100px;
+  max-width: 100%;
+  height: 1000px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "area1 area7" "area2 area7" "area3 area7" "area4 area8" "area5 area8" "area6 area8";
+  row-gap: 0.3125rem;
+}
+.catalogo .catalogo_1, .catalogo .catalogo_3, .catalogo .catalogo_5 {
+  background-color: #16ab72;
+  grid-area: area1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.catalogo .catalogo_1 img, .catalogo .catalogo_3 img, .catalogo .catalogo_5 img {
+  object-fit: cover;
+  width: 200px;
+  height: 10.375rem;
+}
+.catalogo .catalogo_1 div, .catalogo .catalogo_3 div, .catalogo .catalogo_5 div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  margin-left: 150px;
+}
+.catalogo .catalogo_1 div button, .catalogo .catalogo_3 div button, .catalogo .catalogo_5 div button {
+  width: 150px;
+  padding: 5px 5px;
+  margin-top: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.catalogo .catalogo_2, .catalogo .catalogo_4, .catalogo .catalogo_6 {
+  background-color: rgba(185, 190, 13, 0.8666666667);
+  grid-area: area2;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.catalogo .catalogo_2 img, .catalogo .catalogo_4 img, .catalogo .catalogo_6 img {
+  object-fit: cover;
+  width: 200px;
+  height: 10.375rem;
+}
+.catalogo .catalogo_2 div, .catalogo .catalogo_4 div, .catalogo .catalogo_6 div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  margin-left: 150px;
+}
+.catalogo .catalogo_2 div button, .catalogo .catalogo_4 div button, .catalogo .catalogo_6 div button {
+  width: 150px;
+  padding: 5px 5px;
+  margin-top: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.catalogo .catalogo_3, .catalogo .catalogo_5 {
+  grid-area: area3;
+}
+.catalogo .catalogo_4, .catalogo .catalogo_6 {
+  grid-area: area4;
+}
+.catalogo .catalogo_5 {
+  grid-area: area5;
+}
+.catalogo .catalogo_6 {
+  grid-area: area6;
+}
+.catalogo .catalogo_7, .catalogo .catalogo_8 {
+  grid-area: area7;
+  width: 100%;
+  height: 100%;
+}
+.catalogo .catalogo_7 img, .catalogo .catalogo_8 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.catalogo .catalogo_8 {
+  grid-area: area8;
+}
+
+/*Contacto*/
+.conteiner-menu-desplegable {
+  background-color: black;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-around;
+  align-items: none;
+  gap: none;
+  width: 100%;
+  height: 80px;
+  margin-top: 3.125rem;
+  list-style: none;
+}
+.conteiner-menu-desplegable div li button {
+  background-color: rgb(25, 205, 241);
+  border-radius: 10px;
+  width: 160px;
+  padding: 5px 5px;
+  margin-top: 20px;
+}
+.conteiner-menu-desplegable div li button a {
+  color: white;
+  font-size: 20px;
+}
+.conteiner-menu-desplegable div li button a:hover {
+  color: black;
+}
+
+.informacion-contacto, .informacion-contacto-2 {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-around;
+  align-items: none;
+  gap: none;
+  margin-bottom: 1.875rem;
+  margin-top: 70px;
+}
+.informacion-contacto h3, .informacion-contacto-2 h3 {
+  background-color: rgb(79, 71, 242);
+  width: 18.75rem;
+  font-size: 20px;
+  padding: 0.3125rem 0.3125rem;
+  text-align: center;
+}
+
+.informacion-contacto-img img {
+  max-width: 100%;
+}
+
+.footer {
+  display: grid;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin-top: 3.125rem;
+}
+.footer section {
+  color: white;
+}
+.footer section h3 {
+  padding: 20px 20px;
+  margin-left: 40px;
+  font-size: 15px;
+}
+.footer section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.footer section div a img {
+  max-width: 70%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+/*Ingresar*/
+.conteiner-menu-desplegable {
+  background-color: black;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-around;
+  align-items: none;
+  gap: none;
+  width: 100%;
+  height: 80px;
+  margin-top: 3.125rem;
+  list-style: none;
+}
+.conteiner-menu-desplegable div li button {
+  background-color: rgb(25, 205, 241);
+  border-radius: 10px;
+  width: 160px;
+  padding: 5px 5px;
+  margin-top: 20px;
+}
+.conteiner-menu-desplegable div li button a {
+  color: white;
+  font-size: 20px;
+}
+.conteiner-menu-desplegable div li button a:hover {
+  color: black;
+}
+
+form {
+  width: 100%;
+  background-color: rgb(143, 101, 172);
+  height: 400px;
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+form h2 {
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+form input {
+  width: 100%;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid black;
+  margin-top: 20px;
+}
+form input::placeholder {
+  color: rgba(87, 189, 224, 0.802);
+}
+
+/*Elemtos de componentes*/
+/*Elementos del mediaquerry*/
+
+/*# sourceMappingURL=style.css.map */

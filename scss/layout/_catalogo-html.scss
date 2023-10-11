@@ -1,0 +1,94 @@
+/*Catalogo*/
+.catalogo{
+    display: grid;
+    margin-top: 100px;
+    max-width: 100%;
+    height: 1000px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(6 ,1fr);
+    grid-template-areas: 
+    "area1 area7"
+    "area2 area7"
+    "area3 area7"
+    "area4 area8"
+    "area5 area8"
+    "area6 area8"
+    ;
+    row-gap: .3125rem;
+    .catalogo_1{
+    background-color: #16ab72;
+    grid-area: area1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+        img{
+            object-fit: cover;
+            width: 200px;
+            height: 10.375rem;
+        }
+        div{
+            @include flex(column, none,center, none,none);
+            margin-left: 150px;
+            button{
+                width: 150px;
+                padding: 5px 5px;
+                margin-top: 10px;
+                background-color: rgb(0, 0, 0);
+                color: map-get($colores, blanco );
+            }
+        }
+    }
+    .catalogo_2{
+    background-color: #b9be0ddd;
+    grid-area: area2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+        img{
+            object-fit: cover;
+            width: 200px;
+            height: 10.375rem;
+        }
+        div{
+            @include flex(column, none,center, none,none);
+            margin-left: 150px;
+            button{
+                width: 150px;
+                padding: 5px 5px;
+                margin-top: 10px;
+                background-color: rgb(0, 0, 0);
+                color: map-get($colores, blanco );
+            }
+        }
+    } 
+    .catalogo_3{
+        @extend .catalogo_1;
+        grid-area: area3;
+    }
+    .catalogo_4{
+        @extend .catalogo_2;
+        grid-area: area4;
+    }
+    .catalogo_5{
+        @extend .catalogo_3;
+        grid-area: area5;
+    }
+    .catalogo_6{
+        @extend .catalogo_4;
+        grid-area: area6;
+    }
+    .catalogo_7{
+    grid-area: area7;
+    width: 100%;
+    height: 100%;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .catalogo_8{
+        @extend .catalogo_7;
+        grid-area: area8;
+    } 
+}

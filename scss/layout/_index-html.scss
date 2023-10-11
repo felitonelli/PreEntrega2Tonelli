@@ -1,0 +1,116 @@
+/*Index*/
+.conteiner-menu-desplegable{
+    background-color:black;
+    @include flex(none, none, space-around, none,none);
+    width: 100%;
+    height: 80px;
+    margin-top: 3.125rem;
+    list-style: none;
+        div{
+            nav{
+                button{
+                    background-color: rgb(25, 205, 241);
+                    border-radius: 10px;
+                    width: 160px;
+                    padding: 5px 5px;
+                    margin-top: 20px;
+                    a{
+                        color: map-get($colores, blanco );
+                        font-size: 20px;
+                        &:hover{
+                            color: #000000;
+                        } 
+                }
+            }
+        }
+    }
+}
+
+.conteiner-img-central{
+    width: 100%;
+    height: 500px;
+    border-radius: .625rem;
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    div{
+        img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
+
+.Ultimos-ingresos{
+    h2{
+        text-decoration:underline;
+        margin-left: 3.125rem;
+        margin-bottom: .9375rem;
+        font-size: 30px;
+    }
+}
+
+.conteiner-card{
+    background-color: #000000;
+    @include flex(row, wrap, space-around, none,none);
+    margin-top: .3125rem;
+    margin-bottom: 2.1875rem;
+    article{
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: .3125rem .3125rem .3125rem rgb(179, 175, 175);
+        overflow: hidden;
+        margin-top: .9375rem;
+        margin-bottom: .9375rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.Suscripcion{
+    width: 100%;
+    background-color: #4E217F;
+    div{
+        h2{
+            font-size: 1.5625rem;
+            color: map-get($colores, blanco );
+            margin-right: 1.5625rem;
+            text-align: end;
+            padding: .3125rem .625rem;
+        }
+    }
+}
+
+.footer{
+    display: grid;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-top: 3.125rem;
+    section{
+        color: map-get($colores, blanco);
+        h3{
+            padding: 20px 20px;
+            margin-left: 40px;
+            font-size: 15px;
+        }
+    }
+    section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        div{
+            a{
+                img{
+                    max-width: 70%;
+                    border-radius: 30px;
+                    padding: 10px ;  
+                }
+            }
+        }
+    }
+}

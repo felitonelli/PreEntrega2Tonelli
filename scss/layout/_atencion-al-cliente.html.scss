@@ -1,0 +1,45 @@
+/*Atencion al cliente*/
+.conteiner-menu-desplegable{
+    background-color:black;
+    @include flex(none, none, space-around, none,none);
+    width: 100%;
+    height: 80px;
+    margin-top: 3.125rem;
+    list-style: none;
+    div{
+        li{
+            button{
+                background-color: rgb(25, 205, 241);
+                border-radius: 10px;
+                width: 160px;
+                padding: 5px 5px;
+                margin-top: 20px;
+                a{
+                    color: map-get($colores, blanco);
+                    font-size: map-get($font-size,md);
+                    &:hover{
+                        color: map-get($colores, negro);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.conteiner-ayuda{
+    background-color:#16ab72;
+    margin-top: 25px;
+    h2{
+        color: map-get($colores, blanco );
+        text-decoration: underline;
+        text-align: center;
+        padding: 10px 10px;
+    }
+    div{
+        font-size: map-get($font-size, md);
+        h3{
+            font-size: map-get($font-size,xl);
+            text-decoration: underline;
+        }
+    }
+}
