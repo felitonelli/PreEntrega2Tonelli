@@ -26,10 +26,15 @@ body {
 }
 .conteiner-menu-desplegable div nav button {
   background-color: rgb(25, 205, 241);
+  transition: all 2s;
   border-radius: 10px;
   width: 160px;
   padding: 5px 5px;
   margin-top: 20px;
+}
+.conteiner-menu-desplegable div nav button:hover {
+  background-color: rgb(5, 50, 96);
+  width: 200px;
 }
 .conteiner-menu-desplegable div nav button a {
   color: white;
@@ -104,20 +109,26 @@ body {
   grid-template-rows: 50% 50%;
   margin-top: 3.125rem;
 }
-.footer section {
+.footer .section-1 {
   color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
 }
-.footer section h3 {
+.footer .section-1 h3 {
   padding: 20px 20px;
   margin-left: 40px;
-  font-size: 15px;
+  font-size: 25px;
 }
-.footer section {
+.footer .section-2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
 }
-.footer section div a img {
+.footer .section-2 div a img {
   max-width: 70%;
   border-radius: 30px;
   padding: 10px;
