@@ -9,7 +9,7 @@
     div{
         li{
             button{
-                background-color: rgb(25, 205, 241);
+                background-color:#FC2947;
                 border-radius: 10px;
                 width: 160px;
                 padding: 5px 5px;
@@ -28,7 +28,7 @@
 
 form{
     width: 100%;
-    background-color: rgb(143, 101, 172);
+    background-color: #FFDEB9;
     height: 400px;
     padding: 30px;
     margin-top: 40px;
@@ -48,7 +48,7 @@ form{
         border-bottom: 4px solid black;
         margin-top: 20px;
         &::placeholder{
-            color: map-get($colores, azul);
+            color: map-get($colores, negro);
         }
     }
 }

@@ -27,10 +27,10 @@
 }
 
 .conteiner-ayuda{
-    background-color:#16ab72;
+    background-color:#FFDEB9;
     margin-top: 25px;
     h2{
-        color: map-get($colores, blanco );
+        color: map-get($colores, negro);
         text-decoration: underline;
         text-align: center;
         padding: 10px 10px;
@@ -40,6 +40,7 @@
         h3{
             font-size: map-get($font-size,xl);
             text-decoration: underline;
+            color: map-get($colores,negro);
         }
     }
 }

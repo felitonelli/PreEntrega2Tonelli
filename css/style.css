@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #74a7e8;
+  background-color: #bc3eff;
 }
 
 /*Elementos carpeta layout*/
@@ -25,7 +25,7 @@ body {
   list-style: none;
 }
 .conteiner-menu-desplegable div nav button {
-  background-color: rgb(25, 205, 241);
+  background-color: rgb(232, 100, 77);
   transition: all 2s;
   border-radius: 10px;
   width: 160px;
@@ -33,7 +33,7 @@ body {
   margin-top: 20px;
 }
 .conteiner-menu-desplegable div nav button:hover {
-  background-color: rgb(5, 50, 96);
+  background-color: #a045f6;
   width: 200px;
 }
 .conteiner-menu-desplegable div nav button a {
@@ -235,11 +235,11 @@ body {
 }
 
 .conteiner-ayuda {
-  background-color: #16ab72;
+  background-color: #FFDEB9;
   margin-top: 25px;
 }
 .conteiner-ayuda h2 {
-  color: white;
+  color: black;
   text-decoration: underline;
   text-align: center;
   padding: 10px 10px;
@@ -250,6 +250,7 @@ body {
 .conteiner-ayuda div h3 {
   font-size: 25px;
   text-decoration: underline;
+  color: black;
 }
 
 /*Catalogo*/
@@ -264,7 +265,7 @@ body {
   row-gap: 0.3125rem;
 }
 .catalogo .catalogo_1, .catalogo .catalogo_3, .catalogo .catalogo_5 {
-  background-color: #16ab72;
+  background-color: #FC2947;
   grid-area: area1;
   display: flex;
   width: 100%;
@@ -299,7 +300,7 @@ body {
   box-shadow: 2px 5px 0 0 white;
 }
 .catalogo .catalogo_2, .catalogo .catalogo_4, .catalogo .catalogo_6 {
-  background-color: rgba(185, 190, 13, 0.8666666667);
+  background-color: #FE6244;
   grid-area: area2;
   display: flex;
   width: 100%;
@@ -399,7 +400,7 @@ body {
   margin-top: 70px;
 }
 .informacion-contacto h3, .informacion-contacto-2 h3 {
-  background-color: rgb(79, 71, 242);
+  background-color: #f09380;
   width: 18.75rem;
   font-size: 20px;
   padding: 0.3125rem 0.3125rem;
@@ -453,7 +454,7 @@ body {
   list-style: none;
 }
 .conteiner-menu-desplegable div li button {
-  background-color: rgb(25, 205, 241);
+  background-color: #FC2947;
   border-radius: 10px;
   width: 160px;
   padding: 5px 5px;
@@ -469,7 +470,7 @@ body {
 
 form {
   width: 100%;
-  background-color: rgb(143, 101, 172);
+  background-color: #FFDEB9;
   height: 400px;
   padding: 30px;
   margin-top: 40px;
@@ -491,7 +492,7 @@ form input {
   margin-top: 20px;
 }
 form input::placeholder {
-  color: rgba(87, 189, 224, 0.802);
+  color: black;
 }
 
 /*Elemtos de componentes*/
