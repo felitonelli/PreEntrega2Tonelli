@@ -400,5 +400,218 @@ form input::placeholder {
 
 /*Elemtos de componentes*/
 /*Elementos del mediaquerry*/
+@media (max-width: 1024px) {
+  /*Index*/
+  .Ultimos-ingresos h2 {
+    font-size: 25px;
+  }
+  /*Catalogo*/
+  .catalogo {
+    height: 1622px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6, 187px) repeat(2, 250px);
+    grid-template-areas: "area1 area1" "area2 area2" "area3 area3" "area4 area4" "area5 area5" "area6 area6" "area7 area8" "area7 area8";
+  }
+  .catalogo .catalogo_1 img, .catalogo .catalogo_3 img, .catalogo .catalogo_5 img {
+    width: 250px;
+    height: 187px;
+  }
+  .catalogo .catalogo_1 div, .catalogo .catalogo_3 div, .catalogo .catalogo_5 div {
+    margin-left: 35px;
+  }
+  .catalogo .catalogo_1 div h3, .catalogo .catalogo_3 div h3, .catalogo .catalogo_5 div h3 {
+    font-size: 20px;
+  }
+  .catalogo .catalogo_1 div button, .catalogo .catalogo_3 div button, .catalogo .catalogo_5 div button {
+    width: 180px;
+    font-size: 15px;
+  }
+  .catalogo .catalogo_2 img, .catalogo .catalogo_4 img, .catalogo .catalogo_6 img {
+    width: 250px;
+    height: 187px;
+  }
+  .catalogo .catalogo_2 div, .catalogo .catalogo_4 div, .catalogo .catalogo_6 div {
+    margin-left: 35px;
+  }
+  .catalogo .catalogo_2 div h3, .catalogo .catalogo_4 div h3, .catalogo .catalogo_6 div h3 {
+    font-size: 20px;
+  }
+  .catalogo .catalogo_2 div button, .catalogo .catalogo_4 div button, .catalogo .catalogo_6 div button {
+    width: 180px;
+    font-size: 15px;
+  }
+  .footer .section-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: none;
+    gap: none;
+  }
+  .footer .section-1 h3 {
+    font-size: 20px;
+  }
+  .footer .section-2 div img {
+    max-width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .conteiner-menu-desplegable {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    height: 360px;
+  }
+  /*Index*/
+  .conteiner-card article {
+    width: 220px;
+    height: 100%;
+  }
+  .Suscripcion div h2 {
+    font-size: 20px;
+  }
+  .Suscripcion div input {
+    font-size: 20px;
+  }
+  .footer .section-2 div img {
+    max-width: 100%;
+  }
+  /*Contacto*/
+  .informacion-contacto h3, .informacion-contacto-2 h3 {
+    width: 200px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  /*Index*/
+  .Ultimos-ingresos h2 {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+  .Suscripcion div h2 {
+    font-size: 15px;
+  }
+  .footer .section-1 h3 {
+    font-size: 12px;
+    margin-left: 0px;
+  }
+  .footer .section-2 div img {
+    max-width: 110%;
+  }
+  /*Catalogo*/
+  .catalogo .catalogo_1 img, .catalogo .catalogo_3 img, .catalogo .catalogo_5 img {
+    width: 180px;
+    height: 187px;
+  }
+  .catalogo .catalogo_1 div, .catalogo .catalogo_3 div, .catalogo .catalogo_5 div {
+    margin-left: 35px;
+  }
+  .catalogo .catalogo_1 div h3, .catalogo .catalogo_3 div h3, .catalogo .catalogo_5 div h3 {
+    font-size: 15px;
+  }
+  .catalogo .catalogo_1 div button, .catalogo .catalogo_3 div button, .catalogo .catalogo_5 div button {
+    width: 180px;
+    font-size: 12px;
+  }
+  .catalogo .catalogo_2 img, .catalogo .catalogo_4 img, .catalogo .catalogo_6 img {
+    width: 180px;
+    height: 187px;
+  }
+  .catalogo .catalogo_2 div, .catalogo .catalogo_4 div, .catalogo .catalogo_6 div {
+    margin-left: 35px;
+  }
+  .catalogo .catalogo_2 div h3, .catalogo .catalogo_4 div h3, .catalogo .catalogo_6 div h3 {
+    font-size: 15px;
+  }
+  .catalogo .catalogo_2 div button, .catalogo .catalogo_4 div button, .catalogo .catalogo_6 div button {
+    width: 180px;
+    font-size: 12px;
+  }
+  /*Ingresar*/
+  form h2 {
+    font-size: 15px;
+  }
+  form input {
+    font-size: 20px;
+  }
+  /*Atencion al cliente*/
+  .conteiner-ayuda h2 {
+    font-size: 15px;
+  }
+  .conteiner-ayuda div h3 {
+    font-size: 15px;
+  }
+  .conteiner-ayuda div p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .footer .section-1 h3 {
+    font-size: 10px;
+  }
+  /*Index*/
+  .Suscripcion div h2 {
+    font-size: 10px;
+  }
+  /*Catalogo*/
+  .catalogo .catalogo_1 img, .catalogo .catalogo_3 img, .catalogo .catalogo_5 img {
+    width: 150px;
+    height: 187px;
+  }
+  .catalogo .catalogo_1 div, .catalogo .catalogo_3 div, .catalogo .catalogo_5 div {
+    margin-left: 20px;
+  }
+  .catalogo .catalogo_1 div h3, .catalogo .catalogo_3 div h3, .catalogo .catalogo_5 div h3 {
+    font-size: 10px;
+  }
+  .catalogo .catalogo_1 div button, .catalogo .catalogo_3 div button, .catalogo .catalogo_5 div button {
+    width: 120px;
+    font-size: 10px;
+  }
+  .catalogo .catalogo_2 img, .catalogo .catalogo_4 img, .catalogo .catalogo_6 img {
+    width: 150px;
+    height: 187px;
+  }
+  .catalogo .catalogo_2 div, .catalogo .catalogo_4 div, .catalogo .catalogo_6 div {
+    margin-left: 20px;
+  }
+  .catalogo .catalogo_2 div h3, .catalogo .catalogo_4 div h3, .catalogo .catalogo_6 div h3 {
+    font-size: 10px;
+  }
+  .catalogo .catalogo_2 div button, .catalogo .catalogo_4 div button, .catalogo .catalogo_6 div button {
+    width: 120px;
+    font-size: 10px;
+  }
+  /*Contacto*/
+  .informacion-contacto h3, .informacion-contacto-2 h3 {
+    width: 100px;
+    font-size: 7px;
+  }
+  /*Atencion al cliente*/
+  .conteiner-ayuda h2 {
+    font-size: 15px;
+  }
+  .conteiner-ayuda div h3 {
+    font-size: 15px;
+  }
+  .conteiner-ayuda div p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  /*Atencion al cliente*/
+  .conteiner-ayuda h2 {
+    font-size: 15px;
+  }
+  .conteiner-ayuda div h3 {
+    font-size: 15px;
+  }
+  .conteiner-ayuda div p {
+    font-size: 15px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

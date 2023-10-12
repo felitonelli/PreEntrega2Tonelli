@@ -1,0 +1,44 @@
+@media(max-width:768px){
+    .conteiner-menu-desplegable{
+        @include flex (column,none,center,center,none);
+        height: 360px;
+    }
+
+    /*Index*/
+    .conteiner-card{
+        article{
+            width: 220px;
+            height: 100%;
+        }
+    }
+
+    .Suscripcion{
+        div{
+            h2{
+                font-size: map-get($font-size, md);
+            }
+            input{
+                font-size: map-get($font-size, md);
+            }
+        }
+    }
+
+    .footer{
+        .section-2{
+            div{
+                img{
+                    max-width: 100%; 
+                }
+            }
+        }
+    }
+
+    /*Contacto*/
+    .informacion-contacto{
+        h3{
+            width: 200px;
+            font-size: map-get($font-size, sm);
+            
+        }
+    }
+}

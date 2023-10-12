@@ -1,0 +1,17 @@
+@media(max-width:320px){
+    /*Atencion al cliente*/
+    .conteiner-ayuda{
+        h2{
+            font-size: map-get($font-size, sm);
+        }
+        div{
+            h3{
+                font-size: map-get($font-size, sm); 
+            }
+            p{
+                font-size: map-get($font-size, sm);
+            }
+        }
+    }
+}
+

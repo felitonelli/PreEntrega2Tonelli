@@ -1,0 +1,74 @@
+@media(max-width:1024px){
+    /*Index*/
+    .Ultimos-ingresos{
+        h2{
+            font-size: map-get($font-size, xl );
+        }
+    }
+
+    /*Catalogo*/
+    .catalogo{
+        height: 1622px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(6, 187px) repeat(2, 250px);
+        grid-template-areas: 
+        "area1 area1"
+        "area2 area2"
+        "area3 area3"
+        "area4 area4"
+        "area5 area5"
+        "area6 area6"
+        "area7 area8"
+        "area7 area8"
+        ;
+        .catalogo_1{
+            img{
+                width: 250px;
+                height: 187px;
+            }
+            div{
+                margin-left: 35px;
+                h3{
+                    font-size: map-get($font-size, md);
+                }
+                button{
+                    width: 180px;
+                    font-size: map-get($font-size, sm);
+                }
+            }
+        }
+        .catalogo_2{
+            img{
+                width: 250px;
+                height: 187px;
+            }
+            div{
+                margin-left: 35px;
+                h3{
+                    font-size: map-get($font-size, md);
+                }
+                button{
+                    width: 180px;
+                    font-size: map-get($font-size, sm);
+                }
+            }
+        }
+    }
+
+    .footer{
+    
+        .section-1{
+            @include flex(column, none, none, none,none );
+            h3{
+                font-size: map-get($font-size, md);
+            }
+        }
+        .section-2{
+            div{
+                img{
+                    max-width: 85%; 
+                }
+            }
+        }
+    }
+}

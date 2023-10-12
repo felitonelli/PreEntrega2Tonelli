@@ -1,0 +1,90 @@
+@media(max-width:425px){
+    /*Index*/
+    .Ultimos-ingresos{
+        h2{
+            font-size: 18px;
+            margin-left: 8px;
+        }
+    }
+    .Suscripcion{
+        div{
+            h2{
+                font-size: map-get($font-size, sm);
+            }
+        }
+    }
+    .footer{
+        .section-1{
+            h3{
+                font-size: 12px;
+                margin-left: 0px;
+            }
+        }
+        .section-2{
+            div{
+                img{
+                    max-width: 110%; 
+                }
+            }
+        }
+    }
+    /*Catalogo*/
+    .catalogo{
+        .catalogo_1{
+            img{
+                width: 180px;
+                height: 187px;
+            }
+            div{
+                margin-left: 35px;
+                h3{
+                    font-size: map-get($font-size, sm);
+                }
+                button{
+                    width: 180px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .catalogo_2{
+            img{
+                width: 180px;
+                height: 187px;
+            }
+            div{
+                margin-left: 35px;
+                h3{
+                    font-size: map-get($font-size, sm);
+                }
+                button{
+                    width: 180px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    /*Ingresar*/
+    form{
+        h2{
+            font-size: map-get($font-size,sm);
+        }
+        input{
+            font-size: map-get($font-size, md);
+        }
+    }
+    /*Atencion al cliente*/
+    .conteiner-ayuda{
+        h2{
+            font-size: map-get($font-size, sm);
+        }
+        div{
+            h3{
+                font-size: map-get($font-size, sm); 
+            }
+            p{
+                font-size: map-get($font-size, sm);
+            }
+        }
+    }
+}
