@@ -33,8 +33,15 @@
                 width: 150px;
                 padding: 5px 5px;
                 margin-top: 10px;
-                background-color: rgb(0, 0, 0);
+                background-color: black;
                 color: map-get($colores, blanco );
+                transition: all 0.3s ease-in-out;
+                border: 1px solid white;
+                box-shadow: 0 0 0 0 white;
+                &:hover{
+                    transform: translate(-2px -4px);
+                    box-shadow: 2px 5px 0 0 white;
+                }
             }
         }
     }
@@ -56,8 +63,15 @@
                 width: 150px;
                 padding: 5px 5px;
                 margin-top: 10px;
-                background-color: rgb(0, 0, 0);
+                background-color: black;
                 color: map-get($colores, blanco );
+                transition: all 0.3s ease-in-out;
+                border: 1px solid white;
+                box-shadow: 0 0 0 0 white;
+                &:hover{
+                    transform: translate(-2px -4px);
+                    box-shadow: 2px 5px 0 0 white;
+                }
             }
         }
     } 
