@@ -23,7 +23,7 @@
     height: 100%;
         img{
             object-fit: cover;
-            width: 200px;
+            max-width: 45%;
             height: 10.375rem;
         }
         div{
@@ -53,7 +53,7 @@
     height: 100%;
         img{
             object-fit: cover;
-            width: 200px;
+            max-width: 45%;
             height: 10.375rem;
         }
         div{
@@ -82,13 +82,19 @@
     .catalogo_4{
         @extend .catalogo_2;
         grid-area: area4;
+        img{
+            width: 166px;
+        }
     }
     .catalogo_5{
         @extend .catalogo_3;
         grid-area: area5;
+        img{
+            width: 166px;
+        }
     }
     .catalogo_6{
-        @extend .catalogo_4;
+        @extend .catalogo_2;
         grid-area: area6;
     }
     .catalogo_7{

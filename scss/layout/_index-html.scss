@@ -10,11 +10,11 @@
             nav{
                 button{
                     background-color: rgb(232, 100, 77);
-                    transition: all 2s;
                     border-radius: 10px;
                     width: 160px;
                     padding: 5px 5px;
                     margin-top: 20px;
+                    transition: all 2s;
                     &:hover{
                         background-color:  #a045f6;
                         width: 200px;
@@ -48,37 +48,37 @@
 }
 .kenburns-left {
 	-webkit-animation: kenburns-left 5s ease-out both;
-	        animation: kenburns-left 5s ease-out both;
+	animation: kenburns-left 5s ease-out both;
 }
  @-webkit-keyframes kenburns-left {
     0% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 16% 50%;
-              transform-origin: 16% 50%;
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
     }
     100% {
-      -webkit-transform: scale(1.25) translate(-20px, 15px);
-              transform: scale(1.25) translate(-20px, 15px);
-      -webkit-transform-origin: left;
-              transform-origin: left;
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+    transform-origin: left;
     }
-  }
-  @keyframes kenburns-left {
+}
+@keyframes kenburns-left {
     0% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 16% 50%;
-              transform-origin: 16% 50%;
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
     }
     100% {
-      -webkit-transform: scale(1.25) translate(-20px, 15px);
-              transform: scale(1.25) translate(-20px, 15px);
-      -webkit-transform-origin: left;
-              transform-origin: left;
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+    transform-origin: left;
     }
-  }
-  
+}
+
 
 .Ultimos-ingresos{
     h2{
@@ -149,10 +149,10 @@
     background-color: #4E217F;
     div{
         h2{
-            font-size: 1.5625rem;
+            font-size: 1.25rem;
             color: map-get($colores, blanco );
             margin-right: 1.5625rem;
-            text-align: end;
+            text-align: center;
             padding: .3125rem .625rem;
         }
     }
@@ -171,7 +171,7 @@
         h3{
             padding: 20px 20px;
             margin-left: 40px;
-            font-size: map-get($font-size, xl);
+            font-size: map-get($font-size, md);
         }
     }
     .section-2 {
